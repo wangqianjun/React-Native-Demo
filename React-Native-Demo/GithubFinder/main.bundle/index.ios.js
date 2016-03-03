@@ -19,14 +19,10 @@ class GithubFinder extends Component {
     return (
       <View style={styles.container}>
 
+        <Text>
+          This is
+        </Text>
 
-	<TextInput
-		autoCapitalize="none"
-		autoCorrect={false}
-		placeholder="Search for a project"
-		style={styles.searchBarInput}
-	/>
-			
 
       </View>
     );
@@ -36,14 +32,21 @@ class GithubFinder extends Component {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: 'white',
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#F5FCFF',
   },
-  searchBarInput: {
-	marginTop: 30,
-	padding: 5,
-	fontSize: 15,
-   	height: 30,
-	backgroundColor: '#eaeaea'
+  customing: {
+    //fontSize: 20,
+    //textAlign: 'center',
+    width: 200,
+    height: 200,
+    //margin: 10,
+  },
+  instructions: {
+    textAlign: 'center',
+    color: '#333333',
+    marginBottom: 5,
   },
 });
 
